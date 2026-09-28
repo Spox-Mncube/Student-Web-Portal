@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assessor Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="glow-card">
+      <div class="glow-inner">
+
+        <div class="text-center">
+          <span class="badge-role assessor">ASSESSOR PORTAL</span>
+        </div>
+
+        <div class="form-title">
+          <i class="fa-solid fa-user-shield icon-purple"></i> ASSESSOR LOGIN
+        </div>
+
+        <form onsubmit="assessorLogin(event)">
+
+          <div class="input-group">
+            <i class="fa-regular fa-user"></i>
+            <input id="as_user" placeholder="Enter Email" value="" required>
+          </div>
+
+          <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input id="as_pass" type="password" placeholder="Enter Password" value="" required>
+
+          </div>
+
+          <div id="as_err" class="error"></div>
+          <div id="as_ok" class="success"></div>
+
+          <button class="btn-glow" type="submit">Sign In as Assessor</button>
+
+          <div class="form-links">
+            <a href="index.html">Student Login?</a>
+            <a href="signup.html">Create Assessor</a>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
